@@ -18,47 +18,60 @@
         <div id="rightText">
             <h1>This is a fake online e-commerce site home page. This is the fake description. Sign up now to get started!</h1>
         </div>
-        <div>
+        <div id="signup">
             <form action="" method="post">
                 <h1>Sign up below!</h1>
                 <fieldset>
-                    <label for="firstName">First Name</label>
-                    <input type="text" name="firstName">
+                    <div id="cell">
+                        <label for="firstName" id="labelText">First Name</label>
+                        <input type="text" name="firstName" placeholder="First Name...">
+                    </div>
+                    <div id="cell">
+                        <label for="lastName" id="labelText">Last Name</label>
+                        <input type="text" name="lastName" placeholder="Last Name...">
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <label for="lastName">Last Name</label>
-                    <input type="text" name="lastName">
+                    <div id="cell">
+                        <label for="email" id="labelText">Email</label>
+                        <input type="email" name="email" placeholder="email@email.com">
+                    </div> 
+                    <div id="cell">
+                        <label for="phoneNumber" id="labelText">Phone Number</label>
+                        <input type="text" name="phoneNumber" placeholder="123-555-5555">
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <label for="email">Email</label>
-                    <input type="email" name="email">
+                    <div id="cell">
+                        <label for="age" id="labelText">Age</label>
+                        <input type="number" name="Age">
+                    </div>
+                    <div id="cell">
+                        <label for="birthday" id="labelText">Date of Birth</label>
+                        <input type="text" name="birthday" placeholder="01/01/1000">
                 </fieldset>
                 <fieldset>
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="text" name="phoneNumber">
+                    <div id="cell">
+                        <label for="password" id="labelText">Password</label>
+                        <input type="password" name="password"placeholder="Password">
+                    </div>
+                    <div id="cell">
+                        <label for="password2" id="labelText">Confirm Password</label>
+                        <input type="password" name="password2" placeholder="Repeat Password">
+                    </div>
                 </fieldset>
-                <fieldset>
-                    <label for="age">Age</label>
-                    <input type="number" name="Age">
-                </fieldset>
-                <fieldset>
+                <fieldset class="emailUpdate">
                     <h3>Sign up for email updates?</h1>
+                    <div>
                     <label for="emailUpdates">Yes</label>
                     <input type="radio" id="yes" name="emailUpdates" value="yes">
                     <label for="emailUpdates">No</label>
                     <input type="radio" id="no" name="emailUpdates" value="no">
+                </div>
                 </fieldset>
-                <fieldset>
-                    <label for="password">Password</label>
-                    <input type="password" name="password">
-                </fieldset>
-                <fieldset>
-                    <label for="password2">Confrim Password</label>
-                    <input type="password" name="password2">
-                </fieldset>
+                <input type="submit" id="submit" value="Create Account">
             </form>
-            <button>Create Account</button>
-            <h5>Already have an account? Log in</h5>
+            <h5>Already have an account? <a href="">Login</a> </h5>
         </div>
     </div>
 </body>
