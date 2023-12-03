@@ -21,7 +21,7 @@ body {
     position: relative;
     bottom: 825px;
     background: rgba(0, 0, 0, .2);
-    width: 46%;
+    width: 700px;
     height: 200px;
 }
 
@@ -45,7 +45,7 @@ body {
 .rightSide {
     position: relative;
     left: 700px;
-    bottom: 550px;
+    bottom: 600px;
     width: 700px;
 
 }
@@ -55,6 +55,7 @@ body {
     padding: 5%;
     font-size: small;
     width: 110%;
+
 }
 
 #signup {
@@ -107,10 +108,11 @@ h3 {
     margin-top: 15px;
     padding-right: 40px;
     padding-left: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border: 0px;
     border-radius: 10px;
+    height: 45px;
 }
 
 h5 {
@@ -119,4 +121,15 @@ h5 {
 
 a {
     color: green;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: .75em;
+}
+
+input {
+    border-color: grey;
+    border-radius: 5px;
+    height: 25px;
 }
