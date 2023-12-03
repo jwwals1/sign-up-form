@@ -10,31 +10,31 @@
     <div class="leftside">
         <img src="media/ecom.webp" alt="Ecommerce stock background picture" id="ecomPhoto">
         <div class="descriptions">
-            <img src="media/ecom logo.webp" alt="Ecommerce stock logo" id="logo">
+            <img src="media/ecomlogo.jpg" alt="Ecommerce stock logo" id="logo">
             <h1 id="logoText">e-commerce website</h1>
         </div>
     </div>
     <div class="rightSide">
         <div id="rightText">
-            <h1>This is a fake online e-commerce site home page. This is the fake description. Sign up now to get started!</h1>
+            <h1>This is a fake online e-commerce website home page. This is the fake description. I hope you enjoy my page. Sign up now to get started!</h1>
         </div>
         <div id="signup">
             <form action="" method="post">
                 <h1>Sign up below!</h1>
                 <fieldset>
                     <div id="cell">
-                        <label for="firstName" id="labelText">First Name</label>
-                        <input type="text" name="firstName" placeholder="First Name...">
+                        <label for="firstName" id="labelText">First Name*</label>
+                        <input type="text" name="firstName" placeholder="First Name..." minlength="3" required>
                     </div>
                     <div id="cell">
-                        <label for="lastName" id="labelText">Last Name</label>
-                        <input type="text" name="lastName" placeholder="Last Name...">
+                        <label for="lastName" id="labelText">Last Name*</label>
+                        <input type="text" name="lastName" placeholder="Last Name..."  minlength="3" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <div id="cell">
-                        <label for="email" id="labelText">Email</label>
-                        <input type="email" name="email" placeholder="email@email.com">
+                        <label for="email" id="labelText">Email*</label>
+                        <input type="email" name="email" placeholder="email@email.com" required>
                     </div> 
                     <div id="cell">
                         <label for="phoneNumber" id="labelText">Phone Number</label>
@@ -52,12 +52,12 @@
                 </fieldset>
                 <fieldset>
                     <div id="cell">
-                        <label for="password" id="labelText">Password</label>
-                        <input type="password" name="password"placeholder="Password">
+                        <label for="password" id="labelText">Password*</label>
+                        <input type="password" name="password"placeholder="Password" required>
                     </div>
                     <div id="cell">
-                        <label for="password2" id="labelText">Confirm Password</label>
-                        <input type="password" name="password2" placeholder="Repeat Password">
+                        <label for="password2" id="labelText">Confirm Password*</label>
+                        <input type="password" name="password2" placeholder="Repeat Password" required>
                     </div>
                 </fieldset>
                 <fieldset class="emailUpdate">
@@ -68,6 +68,7 @@
                     <label for="emailUpdates">No</label>
                     <input type="radio" id="no" name="emailUpdates" value="no">
                 </div>
+                <h6>*required</h6>
                 </fieldset>
                 <input type="submit" id="submit" value="Create Account">
             </form>
