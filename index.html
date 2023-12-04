@@ -10,13 +10,13 @@
     <div class="leftside">
         <img src="media/ecom.webp" alt="Ecommerce stock background picture" id="ecomPhoto">
         <div class="descriptions">
-            <img src="media/ecomlogo.jpg" alt="Ecommerce stock logo" id="logo">
+            <img src="media/odin-lined.png" alt="Ecommerce stock logo" id="logo">
             <h1 id="logoText">e-commerce website</h1>
         </div>
     </div>
     <div class="rightSide">
         <div id="rightText">
-            <h1>This is a fake online e-commerce website home page. This is the fake description. I hope you enjoy my page. Sign up now to get started!</h1>
+            <h1>This is a fake online e-commerce website home page. This is the fake description. I hope you enjoy my page. Sign up <em>now</em> to get started!</h1>
         </div>
         <div id="signup">
             <form action="" method="post">
@@ -53,11 +53,11 @@
                 <fieldset>
                     <div id="cell">
                         <label for="password" id="labelText">Password*</label>
-                        <input type="password" name="password"placeholder="Password" required>
+                        <input type="password" name="password"placeholder="Password" required minlength="6">
                     </div>
                     <div id="cell">
                         <label for="password2" id="labelText">Confirm Password*</label>
-                        <input type="password" name="password2" placeholder="Repeat Password" required>
+                        <input type="password" name="password2" placeholder="Repeat Password" required minlength="6">
                     </div>
                 </fieldset>
                 <fieldset class="emailUpdate">
@@ -68,8 +68,18 @@
                     <label for="emailUpdates">No</label>
                     <input type="radio" id="no" name="emailUpdates" value="no">
                 </div>
+                </fieldset><br><br>
+                <label id="favoriteColor" for="Favorite Color">Favorite Color?</label>
+                <select name="Favorite Color" id="Color">
+                    <option value=""></option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="orange">Orange</option>
+                    <option value="pink">Pink</option>
+                    <option value="purple">Purple</option>
+                </select>
                 <h6>*required</h6>
-                </fieldset>
                 <input type="submit" id="submit" value="Create Account">
             </form>
             <h5>Already have an account? <a href="">Login</a> </h5>
