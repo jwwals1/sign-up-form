@@ -19,7 +19,7 @@ body {
 .descriptions {
     display: flex;
     position: relative;
-    bottom: 825px;
+    bottom: 900px;
     background: rgba(0, 0, 0, .2);
     width: 700px;
     height: 200px;
@@ -27,11 +27,12 @@ body {
 
 #ecomPhoto {
     width: 700px;
-    height: 900px;
+    height: 1000px;
 }
 
 #logo {
-    mix-blend-mode: multiply;
+    margin-left: 25%;
+    height: 80%;
 }
 
 #logoText {
@@ -55,6 +56,7 @@ body {
     padding: 5%;
     font-size: small;
     width: 110%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -130,6 +132,29 @@ h6 {
 
 input {
     border-color: grey;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 25px;
+    border-width: 2.5px;
+}
+
+input:invalid:focus {
+    border-color: red;
+    outline: none;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:valid:focus {
+    border-color: green;
+    outline: none;
+}
+
+#favoriteColor {
+    font-size: larger;
 }
